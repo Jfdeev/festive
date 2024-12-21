@@ -1,0 +1,52 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* Barra lateral */
+  .sidebar {
+    width: 410px;
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+  }
+
+  .banner{
+    background-image: url(./assets/Background.png);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 94vh;
+    border-radius: 15px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Conteúdo principal */
+  .content {
+    margin-left: 250px; /* Espaço reservado para a sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Largura restante */
+    box-sizing: border-box;
+  }
+  
